@@ -12,5 +12,8 @@ class Rectangle extends Shape {
     public double calculateShape() {
         return length * width;
     }
-    
+         // Method to calculate perimeter of rectangle.
+    public double calculatePerimeter() {
+        return 2 * (length + width);
+    }    
 }
