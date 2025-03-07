@@ -7,5 +7,10 @@ class Rectangle extends Shape {
         setShapeName("Rectangle");
         this.length = length;
         this.width = width;
+    }    
+    // Method to calculate area of rectangle.
+    public double calculateShape() {
+        return length * width;
     }
+    
 }
