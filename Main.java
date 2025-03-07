@@ -68,6 +68,10 @@ public class Main {
         System.out.println("Area: " + shape.calculateShape());
         System.out.println("Perimeter: " + shape.calculatePerimeter());
 
+        //  To Check if the shape also has volume calculations.
+        if (shape instanceof Volume) {
+            System.out.println("Volume: " + ((Volume) shape).calculateVolume());
+        }
     }
 }
 
