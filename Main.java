@@ -38,6 +38,29 @@ public class Main {
                     Square square = new Square(scanner.nextDouble());
                     displayResults(square);
                     break;
+                    case 4:
+                    System.out.print("Enter radius: ");
+                    Sphere sphere = new Sphere(scanner.nextDouble());
+                    displayResults(sphere);
+                    break;
+                case 5:
+                    System.out.print("Enter radius and height: ");
+                    Cylinder cylinder = new Cylinder(scanner.nextDouble(), scanner.nextDouble());
+                    displayResults(cylinder);
+                    break;
+                case 6:
+                    System.out.print("Enter base and height: ");
+                    EquilateralPyramid pyramid = new EquilateralPyramid(scanner.nextDouble(), scanner.nextDouble());
+                    displayResults(pyramid);
+                    break;
+                case 0:
+                    System.out.println("Exiting...");
+                    break;
+                default:
+                    System.out.println("Invalid choice. Try again.");
+            }
+        } while (choice != 0);
+        scanner.close();
 
     }
 }
