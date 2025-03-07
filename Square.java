@@ -6,4 +6,12 @@ class Square extends Shape {
         setShapeName("Square");
         this.side = side;
     }
+    // Method to calculate area of sqare.
+    public double calculateShape() {
+        return side * side;
+    }
+     // Method to calculate perimeter of square.
+    public double calculatePerimeter() {
+        return 4 * side;
+    }
 }
