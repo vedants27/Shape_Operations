@@ -61,6 +61,12 @@ public class Main {
             }
         } while (choice != 0);
         scanner.close();
+    }
+     // Method to display results for selected shape
+    private static void displayResults(Shape shape) {
+        System.out.println("Shape: " + shape.shapeName);
+        System.out.println("Area: " + shape.calculateShape());
+        System.out.println("Perimeter: " + shape.calculatePerimeter());
 
     }
 }
