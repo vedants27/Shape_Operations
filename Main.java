@@ -21,6 +21,24 @@ public class Main {
             System.out.print("Enter choice: ");
             choice = scanner.nextInt();
 
+            // Switch case to handle user selection.
+            switch (choice) {
+                case 1:
+                    System.out.print("Enter radius: ");
+                    Circle circle = new Circle(scanner.nextDouble());
+                    displayResults(circle);
+                    break;
+                case 2:
+                    System.out.print("Enter length and width: ");
+                    Rectangle rectangle = new Rectangle(scanner.nextDouble(), scanner.nextDouble());
+                    displayResults(rectangle);
+                    break;
+                case 3:
+                    System.out.print("Enter side length: ");
+                    Square square = new Square(scanner.nextDouble());
+                    displayResults(square);
+                    break;
+
     }
 }
 
