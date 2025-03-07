@@ -7,4 +7,7 @@ class Circle extends Shape {
         setShapeName("Circle");
         this.radius = radius;
     }
+    // Method to calculate and return the area ofcircle
+    public double calculateShape() {
+        return Math.PI * radius * radius;
 }
